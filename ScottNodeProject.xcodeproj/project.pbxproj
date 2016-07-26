@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4C91D611D47FE0F0027C0D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4C91D601D47FE0F0027C0D9 /* main.cpp */; };
 		A4C91D6C1D48001C0027C0D9 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4C91D6A1D48001C0027C0D9 /* DataNode.cpp */; };
+		A4C91D701D480C9C0027C0D9 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4C91D6E1D480C9C0027C0D9 /* NodeController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A4C91D601D47FE0F0027C0D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4C91D6A1D48001C0027C0D9 /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = Model/DataNode.cpp; sourceTree = "<group>"; };
 		A4C91D6B1D48001C0027C0D9 /* DataNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataNode.hpp; path = Model/DataNode.hpp; sourceTree = "<group>"; };
+		A4C91D6E1D480C9C0027C0D9 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeController.cpp; path = Controller/NodeController.cpp; sourceTree = "<group>"; };
+		A4C91D6F1D480C9C0027C0D9 /* NodeController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NodeController.hpp; path = Controller/NodeController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			children = (
 				A4C91D601D47FE0F0027C0D9 /* main.cpp */,
 				A4C91D6D1D4800280027C0D9 /* Model */,
+				A4C91D711D480CAB0027C0D9 /* Controller */,
 			);
 			path = ScottNodeProject;
 			sourceTree = "<group>";
@@ -73,6 +77,15 @@
 				A4C91D6B1D48001C0027C0D9 /* DataNode.hpp */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A4C91D711D480CAB0027C0D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4C91D6E1D480C9C0027C0D9 /* NodeController.cpp */,
+				A4C91D6F1D480C9C0027C0D9 /* NodeController.hpp */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C91D701D480C9C0027C0D9 /* NodeController.cpp in Sources */,
 				A4C91D611D47FE0F0027C0D9 /* main.cpp in Sources */,
 				A4C91D6C1D48001C0027C0D9 /* DataNode.cpp in Sources */,
 			);
