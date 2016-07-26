@@ -2,7 +2,7 @@
 //  DataNode.hpp
 //  ScottNodeProject
 //
-//  Created by Henrichsen, Cody on 7/26/16.
+/L/  Created by Henrichsen, Cody on 7/26/16.
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
@@ -23,6 +23,6 @@ public:
     void setNodeData(Type nodeData);
     void setNodePointer(DataNode * nodePointer);
     Type getNodeData();
-    
+    DataNode * getNodePointer();
 };
 #endif /* DataNode_hpp */
