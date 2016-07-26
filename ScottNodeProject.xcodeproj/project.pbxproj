@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4C91D611D47FE0F0027C0D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4C91D601D47FE0F0027C0D9 /* main.cpp */; };
+		A4C91D6C1D48001C0027C0D9 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4C91D6A1D48001C0027C0D9 /* DataNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A4C91D5D1D47FE0F0027C0D9 /* ScottNodeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScottNodeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C91D601D47FE0F0027C0D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A4C91D6A1D48001C0027C0D9 /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = Model/DataNode.cpp; sourceTree = "<group>"; };
+		A4C91D6B1D48001C0027C0D9 /* DataNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataNode.hpp; path = Model/DataNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +61,18 @@
 			isa = PBXGroup;
 			children = (
 				A4C91D601D47FE0F0027C0D9 /* main.cpp */,
+				A4C91D6D1D4800280027C0D9 /* Model */,
 			);
 			path = ScottNodeProject;
+			sourceTree = "<group>";
+		};
+		A4C91D6D1D4800280027C0D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4C91D6A1D48001C0027C0D9 /* DataNode.cpp */,
+				A4C91D6B1D48001C0027C0D9 /* DataNode.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C91D611D47FE0F0027C0D9 /* main.cpp in Sources */,
+				A4C91D6C1D48001C0027C0D9 /* DataNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
