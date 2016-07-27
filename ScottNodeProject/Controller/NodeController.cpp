@@ -26,6 +26,6 @@ void NodeController :: tryArray()
 }
 void NodeController:: start()
 {
-    tryNodes();
+    tryArray();
     
 }
