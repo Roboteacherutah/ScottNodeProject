@@ -17,12 +17,12 @@ template <class Type>
 class SummerList
 {
 private:
-    int length;
+    int size;
     bool * modifiedNodes;
     DataNode<Type> * front;
     DataNode<Type> * end;
 public:
-    SummerList(int length);
+    SummerList();
     Type getFromIndex(int index);
     Type getFirst();
     Type getLast();
