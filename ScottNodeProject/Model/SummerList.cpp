@@ -31,9 +31,14 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
     
     if(index == 0)
     {
-        newNode->setNodePointer(front);
+        newNode->setNodePointer(indexPointer);
+        front = newNode;
     }
-    else
+    else if(index == size -1)
+    {
+        end->setNodePointer(newNode);
+        end = newNode;
+    }
     {
     //Get to the spot before the spot I am adding to.
    
