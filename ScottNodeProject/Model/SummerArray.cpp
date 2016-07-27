@@ -70,3 +70,17 @@ Type SummerArray<Type> :: getLast()
 {
     return end->getNodeData();
 }
+template <class Type>
+void SummerArray<Type> :: setAtIndex(int index, Type data)
+{
+    assert(index >=0 && index < length);
+    
+    DataNode<Type> * indexPointer = front;
+     for (int position = 0; position <= index; position++)
+     {
+         indexPointer = indexPointer->getNodePointer();
+     }
+    indexPointer->setNodeData(data);
+    
+}
+
