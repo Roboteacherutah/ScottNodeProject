@@ -8,11 +8,12 @@
 
 #include "NodeController.hpp"
 #include "../Model/DataNode.cpp"
+#include "../Model/SummerArray.cpp"
 #include <string>
 #include <iostream>
 
 using namespace std;
-void NodeController:: tryNodes()
+void NodeController :: tryNodes()
 {
     DataNode <int> numberNode;
     DataNode <string> wordNode;
