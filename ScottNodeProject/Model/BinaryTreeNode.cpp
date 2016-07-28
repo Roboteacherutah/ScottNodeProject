@@ -49,7 +49,7 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftChild()
 template <class Type>
 void BinaryTreeNode<Type> :: setLeftChild(BinaryTreeNode<Type> * leftChild)
 {
-    this; leftChild->  leftChild;
+    this->leftChild = leftChild;
 }
 //Get rightChild
 template <class Type>
@@ -63,6 +63,6 @@ template <class
 Type>
 void BinaryTreeNode<Type> :: setRightChild(BinaryTreeNode<Type> * rightChild)
 {
-    this; rightChild-> rightChild;
+    this->rightChild = rightChild;
 }
 //End Getters and Setters
