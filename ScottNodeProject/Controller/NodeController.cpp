@@ -24,8 +24,12 @@ void NodeController :: tryArray()
 {
     SummerArray<int> testArray(3);
 }
+void NodeController :: tryTree()
+{
+tryTree();
+}
 void NodeController:: start()
 {
-    tryArray();
-    
+    tryTree();
+   
 }

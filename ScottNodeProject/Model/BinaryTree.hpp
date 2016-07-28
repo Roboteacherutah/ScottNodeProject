@@ -10,7 +10,8 @@
 #define BinaryTree_hpp
 
 #include <stdio.h>
-#include "BinaryTreeNode.hpp"
+#include "BinaryTreeNode.cpp"
+
 
 template <class Type>
 class BinaryTree
@@ -21,9 +22,12 @@ private:
 public:
     BinaryTree();
     void insert(Type data);
-    void inOrderTraversal();
-    void preOrderTraversal();
-    void postOrderTraversal();
+    void inOrderTraversal
+    (BinaryTreeNode<Type> * currentNode);
+    void preOrderTraversal
+    (BinaryTreeNode<Type> * currentNode);
+    void postOrderTraversal
+    (BinaryTreeNode<Type> * currentNode);
     int calculateSize();
     bool remove(Type data);
 };

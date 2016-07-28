@@ -7,6 +7,10 @@
 //
 
 #include "BinaryTree.hpp"
+#include <iostream>
+#include <string>
+#include <stdio.h>
+
 //Constructors
 template <class Type>
 BinaryTree<Type> :: BinaryTree()
@@ -43,4 +47,36 @@ void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeN
            insert(insertedNode, currentRootNode-> getRightChild());
        }
 }
+//in order Traversal
+template <class Type>
+void BinaryTree<Type> :: inOrderTraversal(BinaryTreeNode<Type>* currentNode)
+{
+    if(currentNode != nullptr)
+    {
+    inOrderTraversal(currentNode->getLeftChild());
+    std:: cout << currentNode->getNodeData() << ",";
+    inOrderTraversal(currentNode->getRightChild());
+    }
+}
+//Preorder Traversal
+template <class Type>
+void BinaryTree<Type> :: preOrderTraversal(BinaryTreeNode<Type>* currentNode)
+{
+    if(currentNode != nullptr)
+    {
+    std:: cout << currentNode->getNodeData() << ",";
+    preOrderTraversal(currentNode->getLeftChild());
+    preOrderTraversal(currentNode->getRightChild());
+    }
+}//Postorder Traversal
+template <class Type>
+void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type>* currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        postOrderTraversal(currentNode->getLeftChild());
+        postOrderTraversal(currentNode->getRightChild());
+        std:: cout << currentNode->getNodeData() << ",";    }
+}//Remove node
+
 //End Getters and Setters
