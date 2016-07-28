@@ -7,3 +7,35 @@
 //
 
 #include "BinaryTree.hpp"
+//Constructors
+template <class Type>
+BinaryTree<Type> :: BinaryTree()
+{
+    root = nullptr;
+}
+
+template <class Type>
+void BinaryTree<Type> :: insert(Type data)
+{
+    BinaryTreeNode<Type> * insertedNode = new BinaryTreeNode<Type>(data);
+    
+    insert(insertedNode, root);
+}
+//Recursive case
+template <class Type>
+void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
+{
+    if(currentRootNode == nullptr)
+       {
+           currentRootNode = insertedNode;
+       }
+        else if(insertedNode->getNodeData() < currentRootNode-> getNodeData())
+       {
+           insert(insertedNode, currentRootNode-> getLeftChild());
+       }
+        else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
+       {
+           insert(insertedNode, currentRootNode-> getRightChild());
+       }
+}
+//End Constructors
