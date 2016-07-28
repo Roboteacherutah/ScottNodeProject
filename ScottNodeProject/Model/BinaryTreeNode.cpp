@@ -7,7 +7,7 @@
 //
 
 #include "BinaryTreeNode.hpp"
-
+//Constructors
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : DataNode<Type>()
 {
@@ -25,34 +25,42 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : DataNode<Type>(data)
     rightChild = nullptr;
 
 }
+//End Constructors
 //Getters and Setters
 template <class Type>
+//Get parent
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getParent()
 {
     return parent;
 }
+//Set parent
 template <class Type>
 void BinaryTreeNode<Type> :: setParent(BinaryTreeNode<Type> * parent)
 {
     this;  parent->  parent;
 }
+//Get leftChild
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftChild()
 {
     return leftChild;
 }
+//Set leftChild
 template <class Type>
 void BinaryTreeNode<Type> :: setLeftChild(BinaryTreeNode<Type> * leftChild)
 {
     this; leftChild->  leftChild;
 }
+//Get rightChild
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightChild()
 
 {
     return rightChild;
 }
-template <class Type>
+//Set rightChild
+template <class
+Type>
 void BinaryTreeNode<Type> :: setRightChild(BinaryTreeNode<Type> * rightChild)
 {
     this; rightChild-> rightChild;

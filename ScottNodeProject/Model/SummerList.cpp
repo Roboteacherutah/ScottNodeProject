@@ -8,7 +8,7 @@
 
 #include "SummerList.hpp"
 #include <assert.h>
-
+//Constructors
 template <class Type>
 SummerList<Type> :: SummerList()
 
@@ -18,7 +18,9 @@ SummerList<Type> :: SummerList()
     end = nullptr;
     
 }
-
+//End Constructors
+//Getters and Setters
+//Add to node
 template <class Type>
 void SummerList<Type> :: addAtIndex(int index, Type data)
 {
@@ -159,3 +161,4 @@ bool SummerList<Type> :: contains(Type data)
     }
     return isInList;
 }
+//End Getters and Setters

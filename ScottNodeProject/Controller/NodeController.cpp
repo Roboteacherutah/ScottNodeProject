@@ -11,7 +11,7 @@
 #include "../Model/SummerArray.cpp"
 #include <string>
 #include <iostream>
-
+//Constructors
 using namespace std;
 void NodeController :: tryNodes()
 {

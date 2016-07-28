@@ -8,7 +8,7 @@
 
 #include "SummerArray.hpp"
 #include <assert.h>
-
+//Constructors
 template<class Type>
 SummerArray<Type> :: SummerArray (int length)
 {
@@ -35,8 +35,10 @@ SummerArray<Type> :: SummerArray (int length)
         
     }
 }
+//End Constructors
+//Getters and Setters
+//GETTERS
 template <class Type>
-
 Type SummerArray<Type> :: getFromIndex(int index)
 {
 
@@ -70,6 +72,7 @@ Type SummerArray<Type> :: getLast()
 {
     return end->getNodeData();
 }
+//SETTERS
 template <class Type>
 void SummerArray<Type> :: setAtIndex(int index, Type data)
 {
@@ -83,5 +86,5 @@ void SummerArray<Type> :: setAtIndex(int index, Type data)
     indexPointer->setNodeData(data);
     
 }
-
+//End Getters and Setters
 
