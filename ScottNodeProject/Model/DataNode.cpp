@@ -43,9 +43,10 @@ void DataNode<Type> :: setNodeData(Type nodeData)
 {
     this-> nodeData = nodeData;
 }
-template <class Type>//Getters and Setters
+template <class Type>
 
 void DataNode<Type> :: setNodePointer(DataNode<Type>*nodePointer)
 {
 this-> nodePointer = nodePointer;
 }
+//Getters and Setters
