@@ -77,6 +77,13 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type>* currentNode)
         postOrderTraversal(currentNode->getLeftChild());
         postOrderTraversal(currentNode->getRightChild());
         std:: cout << currentNode->getNodeData() << ",";    }
-}//Remove node
+}
+//Get Root
+template <class Type>
+BinaryTreeNode<Type> * BinaryTree<Type> :: getRoot()
+{
+    return root;
+}
+//Remove node
 
 //End Getters and Setters

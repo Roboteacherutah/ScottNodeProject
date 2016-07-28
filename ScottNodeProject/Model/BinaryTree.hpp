@@ -30,6 +30,7 @@ public:
     (BinaryTreeNode<Type> * currentNode);
     int calculateSize();
     bool remove(Type data);
-};
+    
+    BinaryTreeNode<Type> * getRoot();};
 
 #endif /* BinaryTree_hpp */
