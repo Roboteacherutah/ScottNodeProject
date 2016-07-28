@@ -28,7 +28,7 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
     //Differentfrom array - we can add to the end
     DataNode<Type> * indexPointer = front;
     
-    //Create a node
+//Create a node
     DataNode<Type> * newNode = new DataNode<Type>(data);
     
     if(index == 0)
@@ -42,18 +42,19 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
         
     }
     {
-    //Get to the spot before the spot I am adding to.
+//Get to the spot before the spot I am adding to.
    
     for(int position = 0; position < index -1; position++)
     {
         indexPointer = indexPointer->getNdePointer();
     }
-    //Pointed newNode to the address of indexPointers next node
+//Pointed newNode to the address of indexPointers next node
     
     DataNode<Type> * temp =indexPointer->getNodePointer();
     newNode->setodePointer(temp);
     
-    //Setting indexPointer to point the newNodes address
+
+        //Setting indexPointer to point the newNodes address
     indexPointer->setNodePointer(newNode);
         size++;
      }
@@ -61,7 +62,7 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
 template <class Type>
 void SummerList<Type> :: add(Type data)
 {
-   
+//Add Node
     DataNode<Type> * newNode = new DataNode<Type>(data);
     if (size == 0)
     {
@@ -78,7 +79,7 @@ void SummerList<Type> :: add(Type data)
 template <class Type>
 void SummerList<Type> :: addAtFront(Type data)
 {
-//Create a node
+//Create a node at front
 
 DataNode<Type> * newNode = new DataNode<Type>(data);
 
@@ -95,6 +96,7 @@ else
     size++;
 }
 template <class Type>
+//Remove Node
 Type SummerList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < size);

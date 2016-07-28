@@ -24,7 +24,7 @@ DataNode<Type> ::DataNode(Type nodeData)
 
 // End constructors
 // Getters and Setters
-//Getters
+//Get Node Data
 template <class Type>
 Type DataNode<Type> :: getNodeData()
 
@@ -38,7 +38,7 @@ DataNode<Type>* DataNode<Type> :: getNodePointer()
     return nodePointer;
     
 }
-//Setters
+//Set Node data
 template <class Type>
 void DataNode<Type> :: setNodeData(Type nodeData)
 {

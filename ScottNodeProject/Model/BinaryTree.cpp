@@ -13,7 +13,9 @@ BinaryTree<Type> :: BinaryTree()
 {
     root = nullptr;
 }
-
+//End Constructors
+//Getters and Seters
+//Insertion Mode
 template <class Type>
 void BinaryTree<Type> :: insert(Type data)
 {
@@ -21,21 +23,24 @@ void BinaryTree<Type> :: insert(Type data)
     
     insert(insertedNode, root);
 }
-//Recursive case
+//Insertion Base and Recursive case
 template <class Type>
 void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
 {
+//Base Case (no change)
     if(currentRootNode == nullptr)
        {
            currentRootNode = insertedNode;
        }
-        else if(insertedNode->getNodeData() < currentRootNode-> getNodeData())
+//Insertion larger
+    else if(insertedNode->getNodeData() < currentRootNode-> getNodeData())
        {
            insert(insertedNode, currentRootNode-> getLeftChild());
        }
-        else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
+//Insertion smaller
+    else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
        {
            insert(insertedNode, currentRootNode-> getRightChild());
        }
 }
-//End Constructors
+//End Getters and Setters
