@@ -9,7 +9,7 @@
 #include "NodeController.hpp"
 #include "../Model/DataNode.cpp"
 #include "../Model/SummerArray.cpp"
-#include "../Model/BinaryTree.hpp"
+#include "../Model/BinaryTree.cpp"
 #include <string>
 #include <iostream>
 //Constructors
