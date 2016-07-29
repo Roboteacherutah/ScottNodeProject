@@ -10,6 +10,7 @@
 #include "../Model/DataNode.cpp"
 #include "../Model/SummerArray.cpp"
 #include "../Model/BinaryTree.cpp"
+#include "../Model/HashTable.cpp"
 #include <string>
 #include <iostream>
 //Constructors
@@ -51,6 +52,18 @@ void NodeController :: tryTree()
     sampleTree.postOrderTraversal(sampleTree.getRoot());
     cout << endl;
     
+}
+
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    numbersInHash.add(123);
+    numbersInHash.add(342);
+    numbersInHash.add(123423);
+    numbersInHash.add(123413);
+    numbersInHash.add(-213);
+    numbersInHash.add(123);
+    numbersInHash.add(123);
 }
 void NodeController:: start()
 {

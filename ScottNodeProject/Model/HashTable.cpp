@@ -52,19 +52,52 @@ template<class Type>
 long HashTable<Type> :: findPosition(Type data)
 {
     long insertedPosition;
-    int address =&data;
+    unsigned long address =(long)&data;
     insertedPosition = address % capacity;
     HashNode<Type>* indexPointer = front;
     for (long index = 0; index < insertedPosition; index++)
     {
         indexPointer = indexPointer->getNode();
     }
-if (indexPointer->isStuffed())
+if (indexPointer->hasStuffed())
 {
-    insertedPosition = handleCollision(data);
+    insertedPosition = handleCollision(data, insertedPosition);
 }
+    
     return insertedPosition;
 }
+
+template <class Type>
+long HashTable<Type> :: handleCollision(Type data, long currentPosition)
+{
+    long updatedPosition = -1;
+    
+    HashNode<Type> * indexPointer = front;
+    
+    for (long index = -1; index < currentPosition; index++)
+    {
+        indexPointer = indexPointer->getNode();
+    }
+    
+    for (long index = currentPosition + 1; (index < capacity && updatedPosition == 1); index++)
+    {
+        if(!indexPointer->hasStuffed())
+        {
+            updatedPosition = index;
+        }
+    }
+    indexPointer = indexPointer->getNode();
+    if(updatedPosition == -1)
+    {
+        indexPointer = front;
+        for(long index = 0; (index < currentPosition &&updatedPosition == -1);index++)
+        {
+        
+        }
+    }
+    return updatedPosition;
+}
+//Handle Collision Method
 
 
 
