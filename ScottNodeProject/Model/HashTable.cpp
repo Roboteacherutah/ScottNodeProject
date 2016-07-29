@@ -74,7 +74,7 @@ long HashTable<Type> :: handleCollision(Type data, long currentPosition)
     
     HashNode<Type> * indexPointer = front;
     
-    for (long index = -1; index < currentPosition; index++)
+    for (long index = 0; index < currentPosition; index++)
     {
         indexPointer = indexPointer->getNode();
     }
