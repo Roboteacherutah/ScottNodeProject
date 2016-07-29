@@ -16,15 +16,16 @@ class HashNode
 {
 private:
     Type data;
-    bool isStoring;
+    bool isStuffed;
     HashNode<Type> * nextNode;
 public:
     HashNode();
     HashNode(Type data);
     Type getData();
-    bool hasStuf();
+    bool hasStuffed();
+    void setStuffed(bool isStuffed);
     HashNode<Type> * getNode();
-    void tData(Type data);
+    void setData(Type data);
     void setNode(HashNode<Type> * nextNode);
 };
 
