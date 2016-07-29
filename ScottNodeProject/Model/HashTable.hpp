@@ -32,7 +32,7 @@ public:
     HashTable();
     void add(Type data);
     bool remove(Type data);
-    int findosition(Type data);
+
 
 };
 

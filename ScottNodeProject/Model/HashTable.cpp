@@ -8,7 +8,7 @@
 
 #include "HashTable.hpp"
 
-//Constructors
+//Constructor (Builds HashTable)
 template<class Type>
 HashTable<Type> :: HashTable()
 {
@@ -18,7 +18,7 @@ HashTable<Type> :: HashTable()
     
     HashNode<Type> * currentEnd = front;
     this->front = new HashNode<Type>();
-    //Loop to cree the first array of nodes for storage.
+    //Loop to create the first array of nodes for storage.
     for(int index =1; index < capacity; index++)
     {
         HashNode<Type> * next = new HashNode<Type>();
@@ -27,8 +27,36 @@ HashTable<Type> :: HashTable()
      }
     
 }
-    
-//End Constructors
+//End Constructor
 //Getters and Setters
-//GETTERS
+//Add to table Method
+template<class Type>
+void HashTable<Type> :: add(Type data)
+{
+    if(((double)size/ capacity) >= efficiencyPercentage)
+    {
+        resize();
+    }
+    long position = findPosition(data);
+    HashNode<Type> * indexPointer =front;
+    
+    for(int index = 0; index < position; index++)
+    {
+        indexPointer = indexPointer->getNode();
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //End Getters and Setters
