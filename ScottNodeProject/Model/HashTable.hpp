@@ -20,7 +20,7 @@ private:
     bool isPrime(int sampleNumber);
     int size;
     int capacity;
-    double efficiencyPrecentage;
+    double efficiencyPercentage;
     HashNode<Type> * front;
     void resize();
     long nextPrime(long current);
